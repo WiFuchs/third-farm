@@ -12,6 +12,7 @@ function formSubmit(event) {
     };
   
     request.onerror = function() {
+        updateAlert(alert, 'alert-danger', 'Uh oh! Something went wrong... Please email your order to thirdfarmbakery@gmail.com! Sorry about that');
     };
     try {
         request.send(new FormData(event.target)); // create FormData from form that triggered event
