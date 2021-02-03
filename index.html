@@ -1,84 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="site.css" media="screen" rel="stylesheet" type="text/css" />
-    <script src="site.js" type="text/javascript"></script>
-    <title>Third Farm Bakery</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="row">
-        <div class='col-md-1'></div>
-        <div class='col-md-10'>
-          <form id="orderform">
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="site.css" media="screen" rel="stylesheet" type="text/css" />
+        <title>Third Farm Bakery</title>
+    </head>
+    <body>
+        <div class="container">
             <div class="row">
-              <div class="col-sm-12">
-                <div class="form-group">
-                  <h2>Wednesday 2/3 Pre-Order</h2>
-                  <p>Welcome to Third Farm! We're switching to 100% FREE contactless delivery. Please leave your address, and we'll drop off your loaf on Wednesday 2/3!</p>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <label for="whole-wheat">Whole Wheat Sourdough</label>
-                  <select class="bread form-control" type="select" name="whole-wheat" id="whole-wheat" data-price='6'></select>
-                </div>
-                <div class="form-group">
-                  <label for="white">White Sourdough</label>
-                  <select class="bread form-control" type="select" name="white" id="white" data-price='6'></select>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <label for="garlic">Garlic Sourdough</label>
-                  <select class="bread form-control" type="select" name="garlic" id="garlic" data-price='7'></select>
-                </div>
-                <div class="form-group">
-                  <label for="cranberry">Cranberry Sourdough</label>
-                  <select class="bread form-control" type="select" name="cranberry" id="cranberry" data-price='7'></select>
-                </div>
-              </div>
-              <div class="col-sm-12">
-                <div class="form-group">
-                  <label for="name">Name</label>
-                  <input type="text" class="form-control" id="name" name="name" placeholder="Your name.." required>
-                </div>
-                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="text" class="form-control" id="email" name="email" placeholder="Your email.." required>
-                </div>
-                <div class="form-group">
-                  <label for="address">Address</label>
-                  <input type="text" class="form-control" id="address" name="address" placeholder="Where does the bread go?" required>
-                </div>
-                <div class="form-group">
-                  <label for="total">Your Total:</label>
-                  <input type="text" class="form-control" id="total" name="total" readonly />
-                  <small class='form-text text-muted'>
-                    Please venmo your total to @will-fuchs-99. Last 4 phone digits are 8146.
-                    <br><strong>Note:</strong> Orders without payment may not be delivered! <a href='./faq.html' target="_blank">Why?</a>
-                  </small>
-                </div>
-                <div class="form-group">
-                  <label for="comments">Comments?</label>
-                  <textarea class="form-control" name="comments" id="comments" rows="3" placeholder="You can leave the bread in the box by the door!"></textarea>
-                </div>
-                <div class="form-group" id='submit-group'>
-                  <input type="submit" class="form-control" id="submit">
-                </div>
-              </div>
+              <div class='col-md-1'></div>
+              <div class='col-md-10'>
+                <h2>
+                      Sold Out!
+                </h2>
+                <p>We're sorry, we're all sold out! Follow @feeltheloaf on instagram for our next loaf drop :)</p>
             </div>
-          </form>
+            <div class='col-md-1'></div>
         </div>
-        <div class='col-md-1'></div>
-      </div>
-    </div>
-    <script>
-      attachFormSubmitEvent('orderform');
-      populateBreadSelects();
-    </script>
-  </body>
+    </body>
 </html>
